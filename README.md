@@ -1,5 +1,5 @@
 stylecow plugin npm-loader
-============================
+==========================
 
 [![Build Status](https://travis-ci.org/stylecow/stylecow-plugin-npm-loader.svg)](https://travis-ci.org/stylecow/stylecow-plugin-npm-loader)
 
