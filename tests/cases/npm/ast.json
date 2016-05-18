@@ -1,0 +1,27 @@
+{
+  "type": "Root",
+  "children": [
+    {
+      "type": "AtRule",
+      "name": "import",
+      "children": [
+        {
+          "type": "Function",
+          "name": "url",
+          "vendor": null,
+          "children": [
+            {
+              "type": "Value",
+              "children": [
+                {
+                  "type": "String",
+                  "name": "../../../node_modules/magnific-popup/dist/magnific-popup.css"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
