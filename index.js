@@ -39,9 +39,10 @@ module.exports = function (tasks, stylecow) {
             let name = path.basename(atRule.get('String').name), packageDir, style;
 
             try {
-                let packageFile = path.join(nodeModules, name, 'package.json');
+                const packageFile = path.join(nodeModules, name, 'package.json');
                 fs.statSync(packageFile);
-                style = JSON.parse(fs.readFileSync(packageFile)).style;
+                const data = JSON.parse(fs.readFileSync(packageFile));
+                style = data.style || data.main;
                 packageDir = path.dirname(packageFile);
             } catch (err) {
                 return;
